@@ -108,3 +108,22 @@ h1, h2 {
 ul li{
     padding: 10px;
 }
+
+
+/* Config da Seção FARMÁCIA */
+#farmacia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    padding: 70px 80px 24px 80px;
+    position: relative;
+}
+
+.paragrafo-farmacia{
+    margin: 0 230px;
+    text-align: justify;
+    line-height: 20px;
+}
+
