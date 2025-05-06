@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+}
+
+/* HEADER - Menu */
+.menu {
+    background-color: #ff9a6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+.menu nav a {
+    color: #fff;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* Fixar Menu- Topo */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* O header ocupa 100% da tela */
+    z-index: 100; /* Coloca o header acima de outros elementos */
+}
+
+/* Config da Seção INÍCIO */
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 80px 24px 80px;
+    position: relative;
+}
+
+h1, h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+    padding-bottom: 25px;
+}
+
+.conteudo{
+    margin-right: 150px;
+    text-align: justify;
+}
+
+.paragrafo-inicio {
+    line-height: 150%;
+    margin-bottom: 64px;
+}
+
+.botao {
+    background-color: #ff9a6c;
+    border-radius: 8px;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+}
+
+.botao:hover{
+    background-color: #ff725e;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: #ff725e;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+/* Config da Seção CLÍNICA */
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 80px 24px 80px;
+    position: relative;
+}
+
+.lista{
+    margin: 0px 0px 30px 20px;
+}
+
+.paragrafo-clinica{
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+ul li{
+    padding: 10px;
+}
