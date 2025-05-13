@@ -122,8 +122,56 @@ ul li{
 }
 
 .paragrafo-farmacia{
-    margin: 0 230px;
+    margin: 35px 230px;
     text-align: justify;
     line-height: 20px;
+}
+
+/*Config da Seção DÚVIDAS*/
+#duvidas{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 80px;
+}
+
+.duvida{
+    position: relative;
+}
+
+.duvida h3{
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border-right: 1px solid #ff725e;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -40px;
+    line-height: 150%;
+    margin-bottom: 64px;
+
+    /* Eventos */
+    padding: 10px 24px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo{
+    opacity: 1;
+    height: fit-content;
+    overflow: 24px;
+    padding: 60px 24px 10px 24px;
 }
 
