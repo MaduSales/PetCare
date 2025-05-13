@@ -175,3 +175,65 @@ ul li{
     padding: 60px 24px 10px 24px;
 }
 
+/* Config do RODAPÉ */
+footer {
+    background-color: #fde7df;
+    color: #263138;
+  }
+  
+  .rodape-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 64px 80px 40px;
+  }
+  
+  .rodape-coluna {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .rodape-coluna li {
+    margin-bottom: 12px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #ff725e;
+    margin-bottom: 8px;
+  }
+  
+  .rodape-coluna a {
+    color: #263138;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .rodape-coluna a:hover {
+    color: #ff725e;
+  }
+  
+  .rodape-creditos {
+    background-color: #263138;
+    color: #fde7df;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .rodape-creditos a {
+    color: #ff725e;
+    margin-left: 8px;
+    text-decoration: none;
+  }
+  
+  .rodape-creditos a:hover {
+    text-decoration: underline;
+  }
+  
+  .rodape-coluna span{
+    color: #ff725e;
+  }
