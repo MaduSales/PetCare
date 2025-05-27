@@ -9,6 +9,7 @@
 
 body {
     color: #000;
+    overflow-x: hidden;
 }
 
 /* Header - Menu */
@@ -99,4 +100,90 @@ h2 {
     left: 0;
     width: 100%;
     z-index: -10;
+}
+
+
+#clinica {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 40px;
+    gap: 32px;
+    background-color: #FCE4CF;
+    font-family: League Spartan;
+    width: 100%;
+}
+
+.imagem-clinica {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.conteudo-clinica {
+    flex: 1;
+}
+
+.imagem-clinica {
+    flex-shrink: 0;
+    max-width: 700px;
+    height: auto;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+#clinica h1 {
+    margin-bottom: 32px; 
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-left: 30px; 
+    list-style-position: outside;  
+}
+
+ul li {
+    margin-bottom: 20px; 
+}
+
+.paragrafo2 {
+    line-height: 150%;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.botao2 {
+    background-color: #FE7C12;
+    color: #fff;
+    box-shadow: 3px 3px 0px black;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-right: 0px;
+}
+
+
+.botao-transparente2 {
+    background-color: transparent;
+    color: #EE8B48;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.conteudo-clinica a {
+    display: inline-block; 
+    margin-top: 16px; 
+    margin-right: 10px; 
 }
