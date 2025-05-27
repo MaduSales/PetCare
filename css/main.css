@@ -1,82 +1,96 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "League Spartan", sans-serif;
 }
 
 body {
-    color: #263138;
+    color: #000;
 }
 
-/* HEADER - Menu */
+/* Header - Menu */
 .menu {
-    background-color: #ff9a6c;
+    background-color: #fffaf5;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 80px;
-}
-
-.menu nav a {
-    color: #fff;
-    font-weight: 600;
-    padding: 20px;
-    text-decoration: none;
-}
-
-/* Fixar Menu- Topo */
-.menu {
+    padding: 16px 40px;
+    border-bottom: 2px solid black;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* O header ocupa 100% da tela */
-    z-index: 100; /* Coloca o header acima de outros elementos */
+    width: 100%;
+    z-index: 100;
 }
 
-/* Config da Seção INÍCIO */
+.menu img {
+    height: 48px;
+}
+
+.menu nav a {
+    color: black;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu nav a.selected {
+    color: #FE7C12;
+    font-weight: 700;
+}
+
+/* Configuração da seção Início */
 #inicio {
     display: flex;
     align-items: center;
     gap: 32px;
     padding: 80px 80px 24px 80px;
     position: relative;
+    background-color: #fffaf5;
 }
 
-h1, h2 {
-    font-size: 32px;
+h1,
+h2 {
+    font-size: 35px;
     font-weight: 600;
-    margin-top: 40px;
-    padding-bottom: 25px;
+    margin-top: 32px;
 }
 
-.conteudo{
-    margin-right: 150px;
-    text-align: justify;
-}
-
-.paragrafo-inicio {
+.paragrafo {
     line-height: 150%;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+    font-size: 18px;
 }
 
 .botao {
-    background-color: #ff9a6c;
-    border-radius: 8px;
+    background-color: #FE7C12;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
     color: #fff;
     padding: 16px 32px;
     text-decoration: none;
-    transition: 0.3s ease all;
-}
-
-.botao:hover{
-    background-color: #ff725e;
+    transition: 0.2s all ease;
 }
 
 .botao-transparente {
     background-color: transparent;
-    color: #ff725e;
+    color: #FE7C12;
     padding: 16px 32px;
     text-underline-offset: 4px;
+    transition: 0.2s all ease;
+}
+
+.botao-transparente:hover {
+    color: #be5703;
+}
+
+.botao:hover {
+    background-color: #db680a;
 }
 
 .absolute {
@@ -86,154 +100,3 @@ h1, h2 {
     width: 100%;
     z-index: -10;
 }
-
-/* Config da Seção CLÍNICA */
-#clinica {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    padding: 80px 80px 24px 80px;
-    position: relative;
-}
-
-.lista{
-    margin: 0px 0px 30px 20px;
-}
-
-.paragrafo-clinica{
-    line-height: 150%;
-    margin-bottom: 20px;
-}
-
-ul li{
-    padding: 10px;
-}
-
-
-/* Config da Seção FARMÁCIA */
-#farmacia{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 32px;
-    padding: 70px 80px 24px 80px;
-    position: relative;
-}
-
-.paragrafo-farmacia{
-    margin: 35px 230px;
-    text-align: justify;
-    line-height: 20px;
-}
-
-/*Config da Seção DÚVIDAS*/
-#duvidas{
-    display: flex;
-    align-items: center;
-    gap: 64px;
-    padding: 80px;
-}
-
-.duvida{
-    position: relative;
-}
-
-.duvida h3{
-    border: 2px solid #ff725e;
-    border-radius: 8px;
-    padding: 24px;
-}
-
-.duvida img{
-    position: absolute;
-    top: 32px;
-    right: 24px;
-}
-
-.duvida .paragrafo{
-    border-right: 1px solid #ff725e;
-    border-bottom: 1px solid #ff725e;
-    border-left: 1px solid #ff725e;
-    border-radius: 0 0 8px 8px;
-    margin-top: -40px;
-    line-height: 150%;
-    margin-bottom: 64px;
-
-    /* Eventos */
-    padding: 10px 24px;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: .2s;
-}
-
-.duvida.ativa .paragrafo{
-    opacity: 1;
-    height: fit-content;
-    overflow: 24px;
-    padding: 60px 24px 10px 24px;
-}
-
-/* Config do RODAPÉ */
-footer {
-    background-color: #fde7df;
-    color: #263138;
-  }
-  
-  .rodape-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 64px 80px 40px;
-  }
-  
-  .rodape-coluna {
-    list-style: none;
-    padding: 0;
-    flex: 1;
-    min-width: 200px;
-  }
-  
-  .rodape-coluna li {
-    margin-bottom: 12px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    color: #ff725e;
-    margin-bottom: 8px;
-  }
-  
-  .rodape-coluna a {
-    color: #263138;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .rodape-coluna a:hover {
-    color: #ff725e;
-  }
-  
-  .rodape-creditos {
-    background-color: #263138;
-    color: #fde7df;
-    text-align: center;
-    padding: 16px;
-    font-size: 14px;
-    width: 100%;
-  }
-  
-  .rodape-creditos a {
-    color: #ff725e;
-    margin-left: 8px;
-    text-decoration: none;
-  }
-  
-  .rodape-creditos a:hover {
-    text-decoration: underline;
-  }
-  
-  .rodape-coluna span{
-    color: #ff725e;
-  }
